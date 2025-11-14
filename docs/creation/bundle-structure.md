@@ -6,7 +6,7 @@
 模型包文件夹/
 ├── bundleinfo.json          # 模型包配置文件（必需）
 ├── modelbundle.assetbundle  # Unity AssetBundle 文件（必需）
-└── thumbnail.png            # 缩略图文件（可选）
+└── thumbnail.png            # 缩略图文件（建议）
 ```
 
 ## bundleinfo.json 格式
@@ -89,3 +89,9 @@ AssetBundle 文件路径，相对于模型包文件夹的路径
   - 未指定标签时，默认为 `["normal"]`
   - 同一音效文件可以同时用于多个场景
   - 音效文件路径在 `Path` 中指定，相对于模型包文件夹
+- `WalkSoundFrequency`（可选）：走路时每秒的脚步声触发频率
+  - 用于控制角色走路时脚步声的播放频率
+  - 如果未指定，将自动使用原始角色的走路脚步声频率设置
+- `RunSoundFrequency`（可选）：跑步时每秒的脚步声触发频率
+  - 用于控制角色跑步时脚步声的播放频率
+  - 如果未指定，将自动使用原始角色的跑步脚步声频率设置

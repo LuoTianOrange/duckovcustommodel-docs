@@ -11,7 +11,7 @@
 | `LeftHandLocator` | 左手定位锚点，用于绑定左手装备 |
 | `RightHandLocator` | 右手定位锚点，用于绑定右手装备 |
 | `ArmorLocator` | 护甲定位锚点，用于绑定护甲装备 |
-| `HelmetLocator` | 头盔定位锚点，用于绑定头盔装备 |
+| `HelmetLocator` | 头盔定位锚点，用于绑定头盔装备，还有血条 |
 | `FaceLocator` | 面部定位锚点，用于绑定面部装备 |
 | `BackpackLocator` | 背包定位锚点，用于绑定背包装备 |
 | `MeleeWeaponLocator` | 近战武器定位锚点，用于绑定近战武器装备 |

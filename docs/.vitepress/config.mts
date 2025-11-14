@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  base: "/duckovcustommodel-docs/",
   title: "逃离鸭科夫自定义模型管理器",
   description: "Duckov Custom Model - 自定义模型管理器使用文档",
   head: [
@@ -15,8 +16,8 @@ export default defineConfig({
 
   themeConfig: {
     logo: {
-      light: "/docs/images/logo.png",
-      dark: "/docs/images/logo.png",
+      light: "/favicon.ico",
+      dark: "/favicon.ico",
       width: 24,
       height: 24,
     },
@@ -68,11 +69,55 @@ export default defineConfig({
         text: '开始使用',
         items: [
           { text: '介绍', link: '/guide/introduction' },
+          { text: '安装模组', link: '/guide/install-mod' },
           { text: '基本功能', link: '/guide/features' }
         ]
       },
       {
+        text: '使用指南',
+        items: [
+          { text: '模型选择界面', link: '/guide/ui' },
+          { text: '模型安装', link: '/guide/install-model' }
+        ]
+      },
+      {
+        text: '模组制作',
+        collapsed: false,
+        items: [
+          {
+            text: '准备工作', link: '/creation/prerequisites'
+          },
+          {
+            text: '创建模型', link: '/creation/create-model',
+            collapsed: false,
+            items: [
+              { text: '模型包结构', link: '/creation/bundle-structure' },
+              { text: '定位锚点', link: '/creation/locators' },
+              { text: '添加动画器', link: '/creation/add-animator' },
+              { text: '自定义音效', link: '/creation/sounds' },
+              { text: 'AI 角色适配', link: '/creation/ai-characters' }
+            ]
+          },
+          {
+            text: '创建模组', link: '/creation/create-mod'
+          },
+        ]
+      },
+      {
+        text: '动画器参数',
+        collapsed: false,
+        items: [
+          { text: '参数概述', link: '/animator/overview' },
+          { text: 'Bool 参数', link: '/animator/bool-params' },
+          { text: 'Float 参数', link: '/animator/float-params' },
+          { text: 'Int 参数', link: '/animator/int-params' },
+          { text: 'Trigger 参数', link: '/animator/trigger-params' },
+          { text: '动画层配置', link: '/animator/layers' }
+        ]
+      },
+      {
         text: '配置文件',
+        collapsed: false,
         items: [
           { text: 'UIConfig.json', link: '/config/uiconfig' },
           { text: 'HideEquipmentConfig.json', link: '/config/hideequipment' },
@@ -82,34 +127,9 @@ export default defineConfig({
         ]
       },
       {
-        text: '使用指南',
-        items: [
-          { text: '模型选择界面', link: '/guide/ui' },
-          { text: '模型安装', link: '/guide/installation' }
-        ]
-      },
-      {
-        text: '模组制作',
+        text: '模型下载',
         collapsed: false,
-        items: [
-          {
-            text: '准备工作',  link: '/creation/prerequisites'
-          },
-          {
-            text: '创建模组',  link: '/creation/create-mod'
-          },
-          {
-            text: '制作模型',  link: '/creation/create-model',
-            collapsed: false,
-            items: [
-              { text: '模型包结构', link: '/creation/bundle-structure' },
-              { text: '定位锚点', link: '/creation/locators' },
-              { text: '动画器配置', link: '/creation/animator' },
-              { text: '自定义音效', link: '/creation/sounds' },
-              { text: 'AI 角色适配', link: '/creation/ai-characters' }
-            ]
-          }
-        ]
+        link: '/displaymodel/index'
       }
     ],
 

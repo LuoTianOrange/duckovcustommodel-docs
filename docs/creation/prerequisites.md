@@ -147,10 +147,12 @@ ModelPack/
 
 完成准备工作后，你可以：
 
-1. [创建 Unity 项目](./create-model.md) - 设置 Unity 项目并导入模型
+1. [创建模型](./create-model.md) - 设置 Unity 项目并导入模型
 2. [配置定位锚点](./locators.md) - 添加装备定位锚点
 3. [配置动画器](./animator.md) - 设置 Animator Controller
 4. [构建 AssetBundle](./bundle-structure.md) - 导出模型包
+4. [打包模型包](./bundle-structure) - 打包模型包
+4. [创建模组](./create-mod) - 创建模组
 
 ::: tip 建议
 如果是第一次创建模型，建议先从简单的角色模型开始，熟悉整个流程后再尝试更复杂的功能。
