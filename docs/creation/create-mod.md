@@ -314,7 +314,8 @@ description = A template mod for adding custom models to Duckov Custom Model.
 
 ```
 MyModelMod_v1.0/					# Mod文件夹
-├── MyCharacterPack/				# 模型包
+└──Models
+│	├── MyCharacterPack/			# 模型包
 │   ├── bundleinfo.json				# 模型信息
 │   ├── modelbundle.assetbundle		# 模型AB包
 │   └── thumbnail.png				# 模型预览图
@@ -363,6 +364,8 @@ MyModelMod_v1.0/					# Mod文件夹
 - 使用加速器或魔法来上传模组
 - 检查模组`info.ini`信息是否正确
 - 检查创意工坊物品是否在审核中
+- 检查账户是否有上传权限
+- 检查模组预览图是否过大，推荐尺寸`256x256`
 
 ## 下一步
 

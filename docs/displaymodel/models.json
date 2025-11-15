@@ -5,28 +5,32 @@
         "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3601557685",
         "image": "https://images.steamusercontent.com/ugc/18248700973573040659/870EF36D528E90F821DFC515B5960FDC6C2553E6/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
         "name": "酒狐",
-        "tag": ["YSM"]
+        "tag": ["YSM"],
+        "modelID": ["10004","10005"]
       },
       {
         "id": "3603002030",
         "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3603002030",
         "image": "https://images.steamusercontent.com/ugc/17625051038847281653/1E9F9C59C98C31226062859B8A61C082535EE3E3/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
         "name": "芙宁娜",
-        "tag": ["YSM","原神"]
+        "tag": ["YSM","原神"],
+        "modelID": ["10008"]
       },
       {
         "id": "3603002030",
         "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3603135115",
         "image": "https://images.steamusercontent.com/ugc/11048953906420930415/C0C43669A4F6A3C626B1D0F49AC96C57833EE7FB/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
         "name": "索米",
-        "tag": ["YSM","少女前线"]
+        "tag": ["YSM","少女前线"],
+        "modelID": ["91916"]
       },
       {
         "id": "3605606846",
         "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3605606846",
         "image": "https://images.steamusercontent.com/ugc/16250834737265205533/4DE59213316E2B42D6A149BC63FAD0674511115B/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
         "name": "铃兰",
-        "tag": ["YSM","明日方舟"]
+        "tag": ["YSM","明日方舟"],
+        "modelID": ["10086"]
       },
       {
         "id": "3603791115",
@@ -40,14 +44,16 @@
         "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3604248767",
         "image": "https://images.steamusercontent.com/ugc/16410012617013245647/1C993A6D4787763FFF07BEFC55E94C8D722A786F/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
         "name": "HK416",
-        "tag": ["YSM","少女前线"]
+        "tag": ["YSM","少女前线"],
+        "modelID": ["91917"]
       },
       {
         "id": "3605555661",
         "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3605555661",
         "image": "https://images.steamusercontent.com/ugc/14241861895649405465/CAF66B193A185C47E94EC6DE52DA9778EF084958/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
         "name": "笑面教授",
-        "tag": ["YSM","碧蓝档案"]
+        "tag": ["YSM","碧蓝档案"],
+        "modelID": ["10009"]
       },
       {
         "id": "3603175815",
