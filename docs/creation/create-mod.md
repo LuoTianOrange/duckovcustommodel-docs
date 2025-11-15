@@ -18,7 +18,7 @@
 
 ```
 MyModelMod/                      # 模组包根目录
-├── Model/                 # 模型包文件夹
+├── Models/                 # 模型包文件夹
 │   ├── bundleinfo.json          # 模型包配置文件（必需）
 │   ├── modelbundle.assetbundle  # Unity AssetBundle 文件（必需）
 │   ├── thumbnail.png            # 模型缩略图（建议）
@@ -119,6 +119,8 @@ MyModelMod/                      # 模组包根目录
 ### 基础模组代码
 
 创建一个新的 C# 类文件（`ModBehaviour.cs`），添加以下代码：
+
+其中命名空间（DuckovCustomModelRegister）需要改成你的项目的命名空间。
 
 ```C#
 using System;

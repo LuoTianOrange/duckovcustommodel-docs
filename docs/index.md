@@ -14,7 +14,7 @@ hero:
       link: /guide/introduction
     - theme: alt
       text: 在 GitHub 查看
-      link: https://github.com/BAKAOLC/DuckovCustomModel
+      link: https://github.com/Duckov-Custom-Model/DuckovCustomModel
 
 features:
   - title: 自定义模型替换

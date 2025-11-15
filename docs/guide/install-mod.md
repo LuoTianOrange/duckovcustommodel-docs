@@ -20,6 +20,8 @@
 
 在Github上下载最新版本的模型管理器，解压后放置到游戏目录内的Mods文件夹。
 
+路径：`Escape from Duckov\Duckov_Data\Mods`
+
 链接：[Github](https://github.com/BAKAOLC/DuckovCustomModel)
 
 ![image-20251114181343508](/images/image-20251114181343508.png)
