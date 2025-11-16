@@ -30,7 +30,7 @@
         "image": "https://images.steamusercontent.com/ugc/16250834737265205533/4DE59213316E2B42D6A149BC63FAD0674511115B/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
         "name": "铃兰",
         "tag": ["YSM","明日方舟"],
-        "modelID": ["10086"]
+        "modelID": ["11300"]
       },
       {
         "id": "3603791115",
@@ -56,11 +56,33 @@
         "modelID": ["10009"]
       },
       {
-        "id": "3603175815",
-        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3603175815",
-        "image": "https://images.steamusercontent.com/ugc/13791394595366738805/48278D20390B764FFBFE36AE81DF4AE1C7FE4AFD/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
-        "name": "史蒂夫",
-        "tag": ["Minecraft"]
+        "id": "3606660126",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3606660126",
+        "image": "https://images.steamusercontent.com/ugc/15340046880634975624/7D23B0BF4FB8E1B157F8AB5448402029A07714A2/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+        "name": "雪鸮",
+        "tag": ["YSM","星之翼"],
+        "modelID": ["189534"]
+      },
+      {
+        "id": "3606710881",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3606710881",
+        "image": "https://images.steamusercontent.com/ugc/11134209050881955162/F8BE08393E2CC4E7AB28E1D50EB8120E41FAF111/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+        "name": "Fufu",
+        "tag": ["YSM","VOCALOID"]
+      },
+      {
+        "id": "3606567783",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3606567783",
+        "image": "https://images.steamusercontent.com/ugc/14935559293289004310/FD8433CE4790A5E8D387A0E6A2ED4C8FD894CCE9/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+        "name": "强无敌",
+        "tag": ["YSM","少女前线"]
+      },
+      {
+        "id": "3606250785",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3606250785",
+        "image": "https://images.steamusercontent.com/ugc/11664726642742285076/4564E5FBB6F0390481B376895A138C9300C0E795/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+        "name": "反汉克",
+        "tag": ["YSM"]
       }
     ],
     "others":[
@@ -70,6 +92,14 @@
         "image": "https://images.steamusercontent.com/ugc/11964511981819239684/627E7862CBDCC7790CD7BB2E1A0D40716041D9EF/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
         "name": "日富美",
         "tag": ["碧蓝档案"]
+      },
+      {
+        "id": "3603175815",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3603175815",
+        "image": "https://images.steamusercontent.com/ugc/13791394595366738805/48278D20390B764FFBFE36AE81DF4AE1C7FE4AFD/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true",
+        "name": "史蒂夫",
+        "tag": ["Minecraft"],
+        "modelID": ["10064","10066-10080","10083","10084","10085"]
       },
       {
         "id": "3602587768",

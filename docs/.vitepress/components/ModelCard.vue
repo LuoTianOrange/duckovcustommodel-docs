@@ -1,12 +1,6 @@
 <template>
   <div class="model-grid">
-    <a 
-      v-for="model in models" 
-      :key="model.id" 
-      :href="model.url" 
-      target="_blank"
-      class="model-card"
-    >
+    <a v-for="model in models" :key="model.id" :href="model.url" target="_blank" class="model-card">
       <div class="model-image-container">
         <img :src="model.image" class="model-image" />
       </div>
@@ -17,11 +11,7 @@
       </div>
       <div class="model-name">{{ model.name }}</div>
       <div class="model-ids" v-if="model.modelID && model.modelID.length > 0">
-        <span 
-          v-for="id in model.modelID" 
-          :key="id" 
-          class="model-id"
-        >
+        <span v-for="id in model.modelID" :key="id" class="model-id">
           #{{ id }}
         </span>
       </div>
@@ -161,13 +151,13 @@ html.dark .model-card:hover .model-id {
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
   }
-  
+
   .model-id {
     padding: 1px 4px;
     font-size: 9px;
     line-height: 14px;
   }
-  
+
   .model-tag {
     padding: 1px 5px;
     font-size: 11px;

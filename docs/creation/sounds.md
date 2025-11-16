@@ -38,6 +38,16 @@
   - `"death"`：死亡音效，用于 AI 死亡状态
   - `"idle"`：待机音效，用于角色自动播放（可通过配置控制哪些角色类型允许自动播放）
   - `"trigger_on_death"`： 死亡音效，用于角色死亡时自动播放音效
+  - `"trigger_on_hurt"`： 受伤音效，用于角色受伤时自动播放音效
+  - `"search_found_item_quality_none"`： 搜索到品质为none的物品时自动播放音效
+  - `"search_found_item_quality_white"`： 搜索到品质为white的物品时自动播放音效
+  - `"search_found_item_quality_green"`： 搜索到品质为green的物品时自动播放音效
+  - `"search_found_item_quality_blue"`： 搜索到品质为blue的物品时自动播放音效
+  - `"search_found_item_quality_purple"`： 搜索到品质为purple的物品时自动播放音效
+  - `"search_found_item_quality_orange"`： 搜索到品质为orange的物品时自动播放音效
+  - `"search_found_item_quality_red"`： 搜索到品质为red的物品时自动播放音效
+  - `"search_found_item_quality_q7"`： 搜索到品质为q7的物品时自动播放音效
+  - `"search_found_item_quality_q8"`： 搜索到品质为q8的物品时自动播放音效
   - 可以同时包含多个标签，表示该音效可用于多个场景
   - 未指定标签时，默认为 `["normal"]`
 

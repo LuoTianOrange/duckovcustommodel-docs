@@ -8,8 +8,8 @@
 
 | 定位锚点 | 用途 |
 |---------|------|
-| `LeftHandLocator` | 左手定位锚点，用于绑定左手装备 |
-| `RightHandLocator` | 右手定位锚点，用于绑定右手装备 |
+| `LeftHandLocator` | 左手定位锚点，用于绑定左手装备，比如弓 |
+| `RightHandLocator` | 右手定位锚点，用于绑定右手装备，比如枪 |
 | `ArmorLocator` | 护甲定位锚点，用于绑定护甲装备 |
 | `HelmetLocator` | 头盔定位锚点，用于绑定头盔装备，还有血条 |
 | `FaceLocator` | 面部定位锚点，用于绑定面部装备 |

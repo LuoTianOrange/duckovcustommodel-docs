@@ -17,16 +17,17 @@
 一个完整的模组包应包含以下文件：
 
 ```
-MyModelMod/                      # 模组包根目录
-├── Models/                 # 模型包文件夹
-│   ├── bundleinfo.json          # 模型包配置文件（必需）
-│   ├── modelbundle.assetbundle  # Unity AssetBundle 文件（必需）
-│   ├── thumbnail.png            # 模型缩略图（建议）
-│   └── sounds/                  # 音频文件夹（可选）
-│       └── voice.ogg
-├── mod.dll                      # 模组 DLL（必需）
-├── info.ini                     # 模组信息配置（必需）
-└── preview.png                  # 模组预览图（必需）
+MyModelMod/                      	 # 模组包根目录
+└── Models/                 		 # 模型包文件夹
+│	└── CharacterPack/				 # 模型包（可以随意取名）
+│   │	├── bundleinfo.json          # 模型包配置文件（必需）
+│   │	├── modelbundle.assetbundle  # Unity AssetBundle 文件（必需）
+│   │	├── thumbnail.png            # 模型缩略图（建议）
+│   │	└── sounds/                  # 音频文件夹（可选）
+│   │    	└── voice.ogg
+├── mod.dll                      	 # 模组 DLL（必需）
+├── info.ini                     	 # 模组信息配置（必需）
+└── preview.png                  	 # 模组预览图（必需）
 ```
 
 ### 文件说明
@@ -72,13 +73,13 @@ MyModelMod/                      # 模组包根目录
 
 首先需要添加必要的 DLL 引用，通过编辑项目的csproj来引入游戏的DLL。
 
-如果使用的是Rider，使用快捷键`Ctrl+T`打开快速搜索，输入`csp`来快速定位csproj文件，打开
+如果使用的是Rider，使用快捷键`Ctrl+T`打开快速搜索，输入`csp`来快速定位`csproj`文件并打开
 
 ![image-20251115043215043](/images/image-20251115043215043.png)
 
-复制以下代码块中的内容到你的csproj文件：
+复制以下代码块中的内容到你的`csproj`文件：
 
-其中DuckovPath需要修改为你的鸭科夫的游戏路径
+其中`DuckovPath`需要修改为你的鸭科夫的游戏路径
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -120,9 +121,11 @@ MyModelMod/                      # 模组包根目录
 
 创建一个新的 C# 类文件（`ModBehaviour.cs`），添加以下代码：
 
-其中命名空间（DuckovCustomModelRegister）需要改成你的项目的命名空间。
+其中命名空间`DuckovCustomModelRegister`需要改成你的项目的命名空间。
 
-```C#
+`CopyModels`方法的`sourceDir`需要改为`Path.Combine(ModDirectory, "Models/你的模型包名字");`
+
+```csharp
 using System;
 using System.IO;
 using UnityEngine;
@@ -313,15 +316,15 @@ description = A template mod for adding custom models to Duckov Custom Model.
 ### 最终结构
 
 ```
-MyModelMod_v1.0/					# Mod文件夹
+MyModelMod_v1.0/						# Mod文件夹
 └──Models
-│	├── MyCharacterPack/			# 模型包
-│   ├── bundleinfo.json				# 模型信息
-│   ├── modelbundle.assetbundle		# 模型AB包
-│   └── thumbnail.png				# 模型预览图
-├── mod.dll							# ModDLL
-├── info.ini						# Mod信息
-└── preview.png						# Mod预览图
+│	└── CharacterPack/					# 模型包
+│   │	├── bundleinfo.json				# 模型信息
+│   │	├── modelbundle.assetbundle		# 模型AB包
+│   │	└── thumbnail.png				# 模型预览图
+├── mod.dll								# ModDLL
+├── info.ini							# Mod信息
+└── preview.png							# Mod预览图
 ```
 
 ### 发布模组
