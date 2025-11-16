@@ -218,9 +218,10 @@ Assets/StreamingAssets/
 
 完成打包后，你可以：
 
-1. [创建模组](./create-mod.md) - 将 AssetBundle 打包成模组
-2. 测试模型 - 在游戏中测试模型
-3. 发布模组 - 发布到创意工坊
+1. [添加音效](./sounds.md) - 给模型添加待机或其他音效
+2. [适配AI角色](./ai-characters.md) - 配置模型可以修改的AI角色
+2. [打包模型包](./bundle-structure) - 把模型和配置文件等资产打包成模型包
+3. [创建模组](./create-mod.md) - 将 AssetBundle 打包成模组
 
 ## 相关资源
 

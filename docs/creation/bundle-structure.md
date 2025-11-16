@@ -1,4 +1,8 @@
-# 模型包结构
+# 打包模型包
+
+制作好模型后，需要打包成模型包方便我们的mod使用。
+
+## 模型包结构
 
 每个模型包文件夹应包含以下文件：
 
@@ -95,3 +99,64 @@ AssetBundle 文件路径，相对于模型包文件夹的路径
 - `RunSoundFrequency`（可选）：跑步时每秒的脚步声触发频率
   - 用于控制角色跑步时脚步声的播放频率
   - 如果未指定，将自动使用原始角色的跑步脚步声频率设置
+
+## 添加多个模型
+
+可以在`Models`内添加多个模型，以下是酒狐的示例`bundleinfo.json`文件。文件内添加了酒狐的`Character`模型和狐狸的`Pet`模型，同时两个模型都支持替换所有`AICharacter`模型。
+
+```json
+{
+  "BundleName": "jiuhu",
+  "BundlePath": "jiuhu",
+  "Models": [
+    {
+      "ModelID": "10004",
+      "Name": "酒狐",
+      "Author": "酒石酸菌",
+      "Description": "酒狐模型",
+      "Version": "1.0.12",
+      "ThumbnailPath": "preview.png",
+      "PrefabPath": "Assets/酒狐模型.prefab",
+      "Target": [
+        "Character", 
+        "AICharacter"
+      ],
+      "SupportedAICharacters": ["*"],
+      "CustomSounds": [
+        {
+          "Path": "sounds/idle1.ogg",
+          "Tags": [
+            "normal"
+          ]
+        },
+        {
+          "Path": "sounds/idle2.ogg",
+          "Tags": [
+            "normal"
+          ]
+        }
+      ]
+    },
+    {
+      "ModelID": "10005",
+      "Name": "酒狐(狐狸形态)",
+      "Author": "酒石酸菌",
+      "Description": "酒狐狐狸模型",
+      "Version": "1.0.12",
+      "ThumbnailPath": "preview2.png",
+      "PrefabPath": "Assets/酒狐狐狸.prefab",
+      "Target": [
+        "Pet",
+        "AICharacter"
+      ],
+      "SupportedAICharacters": ["*"]
+    }
+  ]
+}
+```
+
+
+
+## 下一步
+
+完成打包模型包后，轮到我们的最后一步——[创建模组](./create-mod)，就快要成功了！

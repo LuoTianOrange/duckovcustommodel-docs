@@ -9,7 +9,7 @@
 你需要安装 Unity 编辑器来创建和导出 AssetBundle。
 
 - **推荐版本**：与游戏使用的 Unity 版本一致（2022.3.62f2）
-- **下载地址**：[NoUnityCN](https://www.nounitycn.top/download?v=unityhub://2022.3.62f2/7670c08855a9)
+- **下载地址**：[NoUnityCN](https://www.nounitycn.top/download?v=unityhub://2022.3.62f2/7670c08855a9)，推荐下载安装包单独安装
 
 ::: tip 版本兼容性
 使用与游戏相同的 Unity 版本可以避免潜在的兼容性问题。如果不想使用游戏使用的版本，可以使用大版本相同的版本(2022.3.xx)。

@@ -88,12 +88,12 @@ export default defineConfig({
             text: '创建模型', link: '/creation/create-model',
             collapsed: false,
             items: [
-              { text: '模型包结构', link: '/creation/bundle-structure' },
-              { text: '定位锚点', link: '/creation/locators' },
-              { text: '添加动画器', link: '/creation/add-animator' },
-              { text: '自定义音效', link: '/creation/sounds' },
-              { text: 'AI 角色适配', link: '/creation/ai-characters' },
-              {text: '打包模型', link: '/creation/create-bundle' }
+              { text: '第一步 定位锚点', link: '/creation/locators' },
+              { text: '第二步 添加动画器', link: '/creation/add-animator' },
+              { text: '第三步 打包模型', link: '/creation/create-bundle' },
+              { text: '第四步 添加自定义音效', link: '/creation/sounds' },
+              { text: '第五步 AI 角色适配', link: '/creation/ai-characters' },
+              { text: '第六步 打包模型包', link: '/creation/bundle-structure' }
             ]
           },
           {
