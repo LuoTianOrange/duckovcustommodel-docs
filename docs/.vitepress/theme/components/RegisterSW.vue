@@ -44,12 +44,14 @@ onBeforeMount(async () => {
   bottom: 0;
   margin: 16px;
   padding: 12px;
-  border: 1px solid #8885;
+  border: 1px solid var(--vp-c-divider);
   border-radius: 4px;
   z-index: 100;
   text-align: left;
-  box-shadow: 3px 4px 5px 0 #8885;
-  background-color: white;
+  box-shadow: var(--vp-shadow-3);
+  background-color: var(--vp-c-bg);
+  color: var(--vp-c-text-1);
+  transition: background-color 0.5s, color 0.5s, border-color 0.5s;
 }
 
 .pwa-toast #pwa-message {
@@ -57,14 +59,19 @@ onBeforeMount(async () => {
 }
 
 .pwa-toast button {
-  border: 1px solid #8885;
+  border: 1px solid var(--vp-c-divider);
   outline: none;
   margin-right: 5px;
   border-radius: 2px;
   padding: 3px 10px;
+  background-color: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
+  cursor: pointer;
+  transition: background-color 0.25s, border-color 0.25s;
 }
 
-.mb-3{
-  margin-bottom: 12px;
+.pwa-toast button:hover {
+  background-color: var(--vp-c-bg-mute);
+  border-color: var(--vp-c-brand-1);
 }
 </style>
