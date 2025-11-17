@@ -12,12 +12,12 @@
 
 ### 2. 选择模板
 
-- 选择 **3D** 模板（推荐使用 3D URP 或标准 3D）
+- 选择 **3D** 模板（推荐使用 3D URP）
 - 设置项目名称，如 `DuckovModelPack`
 - 选择保存位置
 - 点击 **Create Project**
 
-![image-20251114193602668](/images/image-20251114193602668.png)
+![image-20251118045204316](/images/image-20251118045204316.png)
 
 ::: tip 项目设置
 建议使用2022.3.62f2版本创建项目以确保最佳兼容性。
@@ -55,7 +55,7 @@ Rig 类型的选择会影响动画系统的工作方式。
 
 **对于人形角色模型**（推荐）：
 
-1. 将 **Animation Type** 设置为 **Humanoid**
+1. 将 **Animation Type** 设置为 **Humanoid（人形）**
 2. 点击 **Avatar Definition** 的 **Configure** 按钮
 3. Unity 会自动尝试匹配骨骼，检查映射是否正确
 4. 确认后点击 **Apply**，然后点击 **Done**
@@ -96,6 +96,90 @@ Rig 类型的选择会影响动画系统的工作方式。
 ### 4. 应用设置
 
 配置完成后，点击 Inspector 窗口底部的 **应用** 按钮。
+
+
+
+## 导入贴图
+
+有的模型在导入时可能会丢失材质，例如YSM模型导出到Blender后再导入Unity。这时候我们要手动导入贴图并创建材质。
+
+### 1.准备贴图文件
+
+一般模型在导入Unity前都会有对应的贴图文件，一般为png格式的图片。
+
+### 2. 导入贴图到 Unity
+
+把贴图文件拖入Unity的Assets内
+
+![image-20251118033536180](/images/image-20251118033536180.png)
+
+### 3.设置贴图导入属性
+
+选中贴图文件，在 Inspector 面板中配置：
+
+- 勾选`Alpha是透明的`
+- 过滤模式替换为`点（无过滤器）`
+- 格式设置为`RGBA 32 bit`
+
+![img](/images/d38b508b-e6bd-4aa2-a180-8c21aa1c3e92.png)
+
+::: tip 贴图优化建议
+
+\- 最大尺寸使用 2 的幂次方尺寸（如 512、1024、2048、4096）
+
+\- 避免使用过大的贴图，根据实际需求选择合适的分辨率
+
+:::
+
+### 4.创建材质并应用到模型
+
+将FBX模型拖动到场景左边的层级内，这时，我们在场景内可以看到白色的模型。
+
+![image-20251118034413561](/images/image-20251118034413561.png)
+
+先选择模型选中贴图，将贴图拖动到模型上，Unity会自动创建使用这个贴图的材质并应用到模型上。材质文件夹的路径为`Assets/Materials`。
+
+![image-20251118034545545](/images/image-20251118034545545.png)
+
+现在我们可以在场景内看到拥有材质的模型。
+
+![image-20251118035508221](/images/image-20251118035508221.png)
+
+### 5.调整材质（可选）
+
+我们可以调整模型的着色器，来预览在游戏内的效果。因为目前模型管理器无法修改游戏内模型使用的着色器，所以在Unity内对模型修改着色器对游戏内的模型显示效果没有影响。
+
+使用默认的3D模板下，直接导入FBX模型，会使用Unity默认的`Standard`着色器。
+
+![image-20251118040558975](/images/image-20251118040558975.png)
+
+游戏内的着色器使用了**通用渲染管线（URP）**，如果你在前面创建项目时没有使用URP模板，我们可以手动安装URP包。
+
+#### 5.1安装 URP包
+
+[官方文档](https://docs.unity.cn/cn/Packages-cn/com.unity.render-pipelines.universal@14.1/manual/InstallURPIntoAProject.html)
+
+1. 在Unity顶部菜单栏，选择 **Window > Package Manager**，打开 **Package Manager （包管理器）**窗口。
+2. 在 Packages 下拉菜单中，选择 **Unity Registry**（Unity注册表），此时会显示当前 Unity 版本 可用的所有包。
+3. 在包管理器右上角搜索框输入Render。
+4. 选中**Core RP Library**，点击右边的**Install（安装）**。
+5. 选中**Universal RP**，点击右边的**Install（安装）**。
+
+![image-20251118043319102](/images/image-20251118043319102.png)
+
+#### 5.2URP设置
+
+1. 创建URP配置文件，依次点击**Create（创建）** -> Rendering（渲染） -> **URP Assets(with Universal Render)**
+
+   ![image-20251118043959499](/images/image-20251118043959499.png)
+
+   创建好的URP配置文件应该如图（图中修改了文件名为URP）：
+
+   ![image-20251118044820438](/images/image-20251118044820438.png)
+
+2. 设置 URP 为默认渲染管线，设置好后，新添加的模型默认会使用**Universal Render Pipeline/Lit**着色器
+
+   ![image-20251118044610289](/images/image-20251118044610289.png)
 
 ## 创建模型 Prefab
 

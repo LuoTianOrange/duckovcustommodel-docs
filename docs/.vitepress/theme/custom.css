@@ -1,6 +1,16 @@
-.group:has([role='button']) .VPSidebarItem.level-0 .items {
+/* .group:has([role='button']) .VPSidebarItem.level-0 .items {
     padding-left: 16px !important;
     border-left: 1px solid var(--vp-c-divider);
     border-radius: 2px;
     transition: background-color 0.25s;
+  } */
+
+  /* vitepress-plugin-image-viewer 特定样式 */
+  #VPContent .content img {
+    cursor: pointer;
+  }
+
+  #VPContent img:hover {
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
   }

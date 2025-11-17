@@ -27,6 +27,7 @@ onBeforeMount(async () => {
 <template>
   <template v-if="offlineReady">
     <div class="pwa-toast" role="alertdialog" aria-labelledby="pwa-message">
+    <div class="pwa-title">DuckovCustomModel 模组文档</div>
       <div id="pwa-message" class="mb-3">
         网页应用已缓存，可以离线使用
       </div>
@@ -38,6 +39,13 @@ onBeforeMount(async () => {
 </template>
 
 <style>
+.pwa-title {
+  font-size: 16px;
+  font-weight: bolder;
+  color: var(--vp-c-text-1);
+  margin-bottom: 3px;
+}
+
 .pwa-toast {
   position: fixed;
   right: 0;
