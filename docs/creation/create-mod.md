@@ -123,8 +123,6 @@ MyModelMod/                      	 # 模组包根目录
 
 其中命名空间`DuckovCustomModelRegister`需要改成你的项目的命名空间。
 
-`CopyModels`方法的`sourceDir`需要改为`Path.Combine(ModDirectory, "Models/你的模型包名字");`
-
 ```csharp
 using System;
 using System.IO;
@@ -316,15 +314,17 @@ description = A template mod for adding custom models to Duckov Custom Model.
 ### 最终结构
 
 ```
-MyModelMod_v1.0/						# Mod文件夹
-└──Models
-│	└── CharacterPack/					# 模型包
-│   │	├── bundleinfo.json				# 模型信息
-│   │	├── modelbundle.assetbundle		# 模型AB包
-│   │	└── thumbnail.png				# 模型预览图
-├── mod.dll								# ModDLL
-├── info.ini							# Mod信息
-└── preview.png							# Mod预览图
+MyModelMod/                      	 # 模组包根目录
+└── Models/                 		 # 模型包文件夹
+│	└── CharacterPack/				 # 模型包（可以随意取名）
+│   │	├── bundleinfo.json          # 模型包配置文件（必需）
+│   │	├── modelbundle.assetbundle  # Unity AssetBundle 文件（必需）
+│   │	├── thumbnail.png            # 模型缩略图（建议）
+│   │	└── sounds/                  # 音频文件夹（可选）
+│   │    	└── voice.ogg
+├── mod.dll                      	 # 模组 DLL（必需）
+├── info.ini                     	 # 模组信息配置（必需）
+└── preview.png                  	 # 模组预览图（必需）
 ```
 
 ### 发布模组

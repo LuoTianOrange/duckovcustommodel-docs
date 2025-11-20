@@ -47,7 +47,7 @@
         {
           "Path": "sounds/得吃的小曲.ogg",
           "Tags": ["search_found_item_quality_red"]
-        }，
+        },
         {
           "Path": "sounds/idle1.wav",
           "Tags": ["idle"]

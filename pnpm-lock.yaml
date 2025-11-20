@@ -11,6 +11,9 @@ importers:
       '@vite-pwa/assets-generator':
         specifier: ^1.0.2
         version: 1.0.2
+      lucide-vue-next:
+        specifier: ^0.554.0
+        version: 0.554.0(vue@3.5.24)
       vitepress-plugin-image-viewer:
         specifier: ^1.1.6
         version: 1.1.6
@@ -1764,6 +1767,11 @@ packages:
 
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
+
+  lucide-vue-next@0.554.0:
+    resolution: {integrity: sha512-nDchDVm/J3mv+7aYtDh7aLkeBVtzDNyaelKEOlhAE0MKMtDfB9fFatx2siqZUBYhLHjMK5DZnaAC/ODT9vQ63Q==}
+    peerDependencies:
+      vue: '>=3.0.1'
 
   magic-string@0.25.9:
     resolution: {integrity: sha512-RmF0AsMzgt25qzqqLc1+MbHmhdx0ojF2Fvs4XnOqz2ZOBXzzkEwc/dJQZCYHAn7v1jbVOjAZfK8msRn4BxO4VQ==}
@@ -4188,6 +4196,10 @@ snapshots:
   lru-cache@5.1.1:
     dependencies:
       yallist: 3.1.1
+
+  lucide-vue-next@0.554.0(vue@3.5.24):
+    dependencies:
+      vue: 3.5.24
 
   magic-string@0.25.9:
     dependencies:
