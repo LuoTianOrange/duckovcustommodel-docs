@@ -28,7 +28,7 @@ export default withPwa(
     vite: {
       plugins: [
         groupIconVitePlugin({
-          customIcon:{
+          customIcon: {
             'git': 'vscode-icons:file-type-git',
             'bash': 'devicon:bash',
             '文件夹': 'vscode-icons:default-folder',
@@ -103,8 +103,9 @@ export default withPwa(
           text: '使用指南',
           items: [
             { text: '模型选择界面', link: '/guide/ui' },
-            { text: '模型安装', link: '/guide/install-model' },
-            { text: '疑难解答', link: '/creation/FAQ' }
+            { text: '安装模型包', link: '/guide/install-model' },
+            { text: 'DCM SDK 介绍', link: '/guide/dcmsdk' },
+            { text: '疑难解答', link: '/guide/FAQ' }
           ]
         },
         {
@@ -112,14 +113,14 @@ export default withPwa(
           collapsed: false,
           items: [
             { text: '准备工作', link: '/creation/prerequisites' },
-            { text: '创建Unity项目', link: '/creation/create-project' },
+            { text: '创建 Unity 项目', link: '/creation/create-project' },
             { text: '创建模型', link: '/creation/create-model' },
             { text: '定位锚点', link: '/creation/locators' },
             { text: '添加动画器', link: '/creation/add-animator' },
-            { text: '打包模型', link: '/creation/create-bundle' },
+            { text: '打包 AssetBundle', link: '/creation/create-bundle' },
             { text: '自定义音效和对话', link: '/creation/sounds' },
             { text: 'AI 角色适配', link: '/creation/ai-characters' },
-            { text: '打包模型包', link: '/creation/bundle-structure' },
+            { text: '打包模型包', link: '/creation/bundle-structure' }
           ]
         },
         {
@@ -127,7 +128,7 @@ export default withPwa(
           collapsed: false,
           items: [
             { text: '创建模组', link: '/creation/create-mod' },
-            {text:'打包模组',link:'/creation/package-mod'}
+            { text: '打包模组', link: '/creation/package-mod' }
           ]
         },
         {
@@ -135,10 +136,10 @@ export default withPwa(
           collapsed: false,
           items: [
             { text: '参数概述', link: '/animator/overview' },
-            { text: 'Bool 参数', link: '/animator/bool-params' },
-            { text: 'Float 参数', link: '/animator/float-params' },
-            { text: 'Int 参数', link: '/animator/int-params' },
-            { text: 'Trigger 参数', link: '/animator/trigger-params' },
+            { text: 'Bool 参数', link: '/animator/bool' },
+            { text: 'Float 参数', link: '/animator/float' },
+            { text: 'Int 参数', link: '/animator/int' },
+            { text: 'Trigger 参数', link: '/animator/trigger' },
             { text: '动画层配置', link: '/animator/layers' }
           ]
         },
@@ -146,17 +147,18 @@ export default withPwa(
           text: '配置文件',
           collapsed: false,
           items: [
-            { text: 'UIConfig.json', link: '/config/uiconfig' },
-            { text: 'HideEquipmentConfig.json', link: '/config/hideequipment' },
-            { text: 'UsingModel.json', link: '/config/usingmodel' },
-            { text: 'IdleAudioConfig.json', link: '/config/idleaudio' },
-            { text: 'ModelAudioConfig.json', link: '/config/modelaudio' }
+            { text: 'UIConfig', link: '/config/uiconfig' },
+            { text: 'HideEquipment', link: '/config/hide-equipment' },
+            { text: 'UsingModel', link: '/config/using-model' },
+            { text: 'IdleAudio', link: '/config/idle-audio' },
+            { text: 'ModelAudio', link: '/config/model-audio' }
           ]
         },
         {
           text: '模型下载',
-          collapsed: false,
-          link: '/displaymodel/index'
+          items: [
+            { text: '模型展示', link: '/displaymodel/index' }
+          ]
         }
       ],
 

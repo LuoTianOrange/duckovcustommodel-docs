@@ -15,55 +15,9 @@
 
 ## 使用SDK打包(推荐)
 
-如果安装了**DCM SDK**，可以使用SDK来打包模型。
+如果安装了**DCM SDK**，可以使用SDK来打包模型。请查看[SDK介绍](/guide/dcmsdk.md#使用SDK打包模型)页面。
 
 
-
-### 设置游戏路径
-
-如果之前已经设置过游戏路径，可以跳过这一步。点击导航栏内的**Duckov Custom Model**，并点击**游戏路径设置**，会打开一个设置游戏路径的窗口
-
-![image-20251122023607270](/images/image-20251122023607270.png)
-
-#### 自动查找游戏路径(适用于Windows用户)
-
-1. 点击**自动查找**按钮
-
-2. 会打开一个成功找到游戏路径的窗口，完成游戏路径的设置
-
-   ![image-20251122023921455](/images/image-20251122023921455.png)
-
-#### 手动查找游戏路径
-
-1. 点击**浏览**按钮
-
-2. 会打开一个选择游戏安装目录的窗口，跳转到游戏所在的文件夹根目录后，点击**选择文件夹**
-
-   ![image-20251122024359862](/images/image-20251122024359862.png)
-
-3. 完成游戏路径的设置
-
-### 导出模型Bundle
-
-点击导航栏内的**Duckov Custom Model**菜单，并点击**AssetBundle 打包工具**按钮，会打开**AssetBundle 打包工具**
-
-![image-20251122032356015](/images/image-20251122032356015.png)
-
-修改Bundle名称，选择对应的构建目标平台，并将准备好的模型预制件（Prefab）拖动到AssetBundle 打包工具的**无(游戏对象)**上。
-
-![Unity_RXUNEBZl42](/images/Unity_RXUNEBZl42.gif)
-
-点击**导出模型Bundle**，会打开一个**保存模型Bundle**的窗口，选择你的模型包，点击保存。
-
-![image-20251122034733946](/images/image-20251122034733946.png)
-
-模型打包成功后，会打开一个成功的窗口，打开我们的模组包，可以看到保存好的AssetBundle。
-
-![image-20251122035058816](/images/image-20251122035058816.png)
-
-::: warning 重要
-**DCM SDK**打包的AssetBundle是带有`.unity3d`后缀的，在编写`bundleinfo.json`的时候，`BundlePath`也要使用xxx.unity3d
-:::
 
 ## 手动打包
 

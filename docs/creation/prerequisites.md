@@ -77,13 +77,12 @@ x86 Windows用户选择**[Git for Windows/x64 Setup](https://github.com/git-for-
 如果你需要创建或修改 3D 模型，可以使用以下软件之一：
 
 - **Blender**（免费开源）- [下载地址](https://www.blender.org/)
-- **Maya**
-- Blockbench（MC模型）
+- **Blockbench**（MC模型）
 - 其他支持导出 FBX/OBJ 格式的 3D 软件
 
 ### 文本编辑器
 
-用于编辑 JSON 配置文件：
+用于编辑 JSON 配置文件，同时检查格式是否正确：
 
 ![image-20251122194535762](/images/image-20251122194535762.png)
 
@@ -167,19 +166,7 @@ ModelPack/
 	└── idle1.wav
 ```
 
-## 获取信息
 
-为了更好地适配游戏，你需要了解：
-
-### AI 角色名称键
-
-如果要为 AI 角色创建模型，需要知道 AI 角色的名称键：
-
-1. 打开游戏安装目录
-2. 导航到 `Duckov_Data/StreamingAssets/Localization`
-3. 打开任意语言的 CSV 文件（如 `ChineseSimplified.csv`）
-4. 找到 `Characters` 工作表
-5. `key` 列中的值就是 AI 角色名称键（如 `Cname_Wolf`、`Cname_Scav`）
 
 ## 检查清单
 

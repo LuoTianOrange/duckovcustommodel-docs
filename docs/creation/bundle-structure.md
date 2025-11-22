@@ -80,8 +80,8 @@ AssetBundle 文件路径，相对于模型包文件夹的路径
 - `Description`（可选）：模型描述信息
 - `Version`（可选）：模型版本号
 - `ThumbnailPath`（可选）：缩略图路径，相对于模型包文件夹的外部文件路径（如 `"thumbnail.png"`）
-- `PrefabPath`（必需）：模型 Prefab 在 AssetBundle 内的资源路径（如 `"Assets/Model.prefab"`）
-- `DeathLootBoxPrefabPath`（可选）：死亡战利品箱 Prefab 在 AssetBundle 内的资源路径（如 `"Assets/DeathLootBox.prefab"`）
+- `PrefabPath`（必需）：模型 Prefab 在打包 AssetBundle 时，在 Unity 内的资源路径（如 `"Assets/Model.prefab"`）
+- `DeathLootBoxPrefabPath`（可选）：死亡战利品箱 Prefab 在打包 AssetBundle 时，在 Unity 内的资源路径（如 `"Assets/DeathLootBox.prefab"`）
   - 当角色使用该模型并死亡时，如果配置了此字段，死亡战利品箱会使用自定义的 Prefab 替换默认模型
   - 如果未配置此字段，死亡战利品箱将使用默认模型
 - `Target`（可选）：模型适用的目标类型数组（默认：`["Character"]`）
@@ -89,7 +89,7 @@ AssetBundle 文件路径，相对于模型包文件夹的路径
   - 可以同时包含多个值，表示该模型同时适用于多个目标类型
   - 模型选择界面会根据当前选择的目标类型过滤显示兼容的模型
 - `SupportedAICharacters`（可选）：支持的 AI 角色名称键数组（仅在 `Target` 包含 `"AICharacter"` 时有效）
-  - 可以指定该模型适用于哪些 AI 角色
+  - 可以指定该模型适用于哪些 AI 角色，具体请查看[AI 角色适配](/creation/ai-characters.md)
   - 特殊值 `"*"`：表示该模型适用于所有 AI 角色
   - 如果为空数组且 `Target` 包含 `"AICharacter"`，则该模型不会应用于任何 AI 角色
 - `CustomSounds`（可选）：自定义音效信息数组，支持为音效配置标签，具体标签信息请查看[添加自定义音效](./sounds.md#SoundInfo-字段说明)
