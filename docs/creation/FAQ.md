@@ -118,7 +118,7 @@
 
   打开包管理器，点击"**+**"，然后点击**Add package by name**
 
-  ![image-20251122220622320](../public/images/image-20251122220622320.png)
+  ![image-20251122220622320](/images/image-20251122220622320.png)
 
   输入
 
@@ -126,7 +126,7 @@
   com.unity.nuget.newtonsoft-json
   ```
 
-  ![image-20251122220941886](../public/images/image-20251122220941886.png)
+  ![image-20251122220941886](/images/image-20251122220941886.png)
 
   然后点击**添加**按钮，等待包安装完成。
 
