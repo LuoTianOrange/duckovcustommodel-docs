@@ -148,10 +148,10 @@ export default withPwa(
           collapsed: false,
           items: [
             { text: 'UIConfig', link: '/config/uiconfig' },
-            { text: 'HideEquipment', link: '/config/hide-equipment' },
-            { text: 'UsingModel', link: '/config/using-model' },
-            { text: 'IdleAudio', link: '/config/idle-audio' },
-            { text: 'ModelAudio', link: '/config/model-audio' }
+            { text: 'HideEquipment', link: '/config/hideequipment' },
+            { text: 'UsingModel', link: '/config/usingmodel' },
+            { text: 'IdleAudio', link: '/config/idleaudio' },
+            { text: 'ModelAudio', link: '/config/modelaudio' }
           ]
         },
         {
